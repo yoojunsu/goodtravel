@@ -1,0 +1,36 @@
+html {
+	font-size: 9px;
+}
+
+.row-resolution-nav-hamburger > .hamburger-line {
+	background: #000;
+}
+
+.section1-item-wrap {
+	grid-template-areas: ".";
+}
+
+.news-item {
+	max-width: 100%;
+}
+
+.item-inner {
+	height: 250px;
+}
+
+/********************
+ * 반응형 미디어쿼리
+ ********************/
+
+@media screen and (max-width:550px) {
+	html {
+		font-size: 8px;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	html {
+		font-size: 7px;
+	}
+}
+

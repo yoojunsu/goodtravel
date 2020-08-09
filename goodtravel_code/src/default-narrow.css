@@ -1,0 +1,118 @@
+.header {
+	padding: 13px 0;
+}
+
+.header-block {
+	width: 90%;
+}
+
+.row-resolution-nav-hamburger {
+	position: absolute;
+	padding: 5px;
+	right: 4%;
+}
+
+.row-resolution-nav-hamburger > .hamburger-line {
+	width: 30px;
+	height: 3px;
+	background: #fff;
+	margin: 5px;
+}
+
+.header-nav {
+	display: none;
+}
+
+.row-resolution-nav-wrap {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0; 
+	bottom: 0;
+	background: rgba(61, 125, 195, 0.8);
+	z-index: 10000;
+}
+
+.close-wrap {
+	width: 20px;
+	height: 20px;
+	position: absolute;;
+	top: 1.7%;
+	right: 5%;
+}
+
+.close-wrap > .close {
+	display: block;
+	width: 3px;
+	height: 30px;
+	background: #fff;
+	position: absolute;
+}
+
+.close1 {
+	transform: rotate(45deg);
+}
+
+.close2 {
+	transform: rotate(-45deg);
+}
+
+.row-resolution-nav {
+	padding: 80px;
+}
+
+.row-resolution-nav > li {
+	margin: 30px 0;
+}
+
+.row-resolution-nav > li > a {
+	color: #fff;
+	font-size: 2rem;
+}
+
+.row-resolution-nav-booking-sub > li {
+	margin: 5px 0;
+}
+
+.row-resolution-nav-booking-sub > li > a {
+	color: #fff;
+	font-size: 1.5rem;
+}
+
+.row-resolution-nav > li > i {
+	font-size: 2.5rem;
+	color: #fff;
+	margin-right: 10px;
+}
+
+.row-resolution-nav > li > #search-keyword {
+	border: 0;
+	border-bottom: 1px solid #ccc;
+	background: transparent;
+	width: 210px;
+	padding: 5px 15px;
+	font-size: 2rem;
+	color: #fff;
+}
+
+.row-resolution-nav > li > #search-go {
+	display: none;
+}
+
+/********************
+ * 풋터 영역 css
+ ********************/
+
+.footer-list-wrap {
+	grid-gap: 40px;
+}
+
+@media screen and (max-width: 450px) {
+	.footer-list-wrap {
+		grid-template-areas: ". . .";
+	}
+	
+	.footer-icon-wrap > i {
+		margin-right: 6px;
+	}	
+}

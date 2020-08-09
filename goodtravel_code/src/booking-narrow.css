@@ -1,0 +1,51 @@
+.info-list > li {
+	line-height: 18px;
+}
+
+/********************
+ * 반응형 미디어쿼리
+ ********************/
+
+@media screen and (max-width:550px) {
+	.booking-section1-item-wrap {
+		grid-template-areas: ".";
+		grid-gap: 20px;
+	}
+	
+	.booking-section1-wrap {
+		margin: 50px auto;
+	}
+	
+	.section1-item {
+		max-width: 350px;
+	}
+	
+	.booking-section2-content {
+		display: block;
+	}
+	
+	.booking-search-btn-wrap {
+		display: block;
+		float: none;
+		text-align: center;
+	}
+	
+	.booking-section2-info {
+		width: 100%;
+		padding: 10px;
+	}
+}
+
+@media screen and (max-width:400px) {
+	html {
+		font-size: 8px;
+	}
+	
+	.booking-section1-title-wrap {
+		text-align: center;
+	}
+	
+	.booking-section2-title-wrap {
+		text-align: center;
+	}
+}

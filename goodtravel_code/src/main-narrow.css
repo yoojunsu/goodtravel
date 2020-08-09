@@ -1,0 +1,170 @@
+html {
+	font-size: 8px;
+}
+/************************
+ * 메인 영역 저해상도 css
+************************/
+
+.slide-content > img:nth-of-type(1) {
+	max-width: 100%;
+}
+
+.slide-content-text > a {
+	margin-top: 10px;
+}
+
+.section3-content > img {
+	order: 1;
+	max-width: 100%;
+}
+
+.section3-content-text {
+	flex-basis: 100%;
+	order: 2;
+	padding: 40px;
+	text-align: center;
+}
+
+.main-section4 {
+	width: 95%;
+}
+
+.section4-content-wrap {
+	grid-template-areas: ". .";	
+	grid-gap: 20px;
+}
+
+.section6-content-wrap {
+	grid-template-areas: ". .";
+	grid-gap: 30px;
+}
+
+/********************
+ * 반응형 미디어쿼리
+ ********************/
+
+/**** max-width:800px이하 일때의max-height 구간 css ****/
+@media screen and (max-height: 1024px) {
+	.main-slide-wrap {
+		height: 1000px;
+	}
+}
+
+@media screen and (max-height: 960px) {
+	.main-slide-wrap {
+		height: 900px;
+	}
+}
+	
+@media screen and (max-height: 830px) {
+	.main-slide-wrap {
+		height: 730px;
+	}
+}
+
+@media screen and (max-height: 768px) {
+	.main-slide-wrap {
+		height: 720px;
+	}
+}
+
+@media screen and (max-height: 667px) {
+	.main-slide-wrap {
+		height: 670px;
+	}
+}
+
+@media screen and (max-height: 638px) {
+	.main-slide-wrap {
+		height: 610px;
+	}	
+}
+ 
+@media screen and (max-height: 570px) {
+	.main-slide-wrap {
+		height: 570px;
+	}
+}
+
+@media screen and (max-height: 420px) {
+	.main-slide-wrap {
+		height: 400px;
+	}
+}
+
+@media screen and (max-height: 375px) {
+	.main-slide-wrap {
+		height: 370px;
+	}
+}
+
+@media screen and (max-height: 320px) {
+	.main-slide-wrap {
+		height: 320px;
+	}
+}
+
+/**** max-width 구간 css ****/
+@media screen and (max-width: 550px) {
+	html {
+		font-size: 7px;
+	}
+	
+	.main-section2 {
+		grid-template-areas: ". .";
+	}
+	
+	.row-resolution-nav {
+		padding: 40px;
+	}
+
+	.section4-content-wrap {
+		grid-template-areas: ".";
+	}	
+}
+
+@media screen and (max-width: 450px) {
+	.slide-content > img:nth-of-type(1)	{
+		display: none;
+	}
+	
+	.slide-content > img:nth-of-type(2) {
+		display: block;
+	}
+	
+	.section5-select-wrap {
+		display: block;	
+	}
+	
+	.arriving-wrap {
+		margin-right: 0;
+		margin: 12px 0;
+	}
+	
+	.section5-search-content-wrap p {
+		margin-bottom: 5px;
+	}
+	
+	.section5-select-wrap select {
+		width: 100%;
+		margin-top: 5px;
+	}
+	
+	.section5-select-btn-wrap {
+		padding: 30px 0;
+	}
+	
+	.section5-select-btn-wrap > button {
+		width: 100%;
+	}
+	
+	.section6-news-link-wrap {
+		position: static;
+		text-align: center;
+		margin-top: 30px;
+	}
+	
+	.section6-content-wrap {
+		grid-template-areas: ".";
+	}
+}

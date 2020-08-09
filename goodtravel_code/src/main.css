@@ -1,0 +1,627 @@
+/***********************
+ * 메인 영역 css
+ ************************/
+
+/** 메인 슬라이드 **/
+.main-slide-wrap {
+	width: 100%;
+	position: relative;
+	height: 969px;
+}
+
+.main-slide {
+	width: 100%;
+	position: relative;
+	font-size: 0;
+}
+
+.slide-content {
+	position: absolute;
+	opacity: 0;
+	transition: 1s;
+}
+
+.slide-content > img:nth-of-type(1) {
+	height: 100vh;
+	width: 100%;
+	max-height: 969px;
+}
+
+.slide-content > img:nth-of-type(2) {
+	display: none;
+	width: 100%;
+}
+
+.slide-applay { /** 슬라이드 addClass **/
+	opacity: 1;
+	z-index: 3;
+}
+
+.slide-content .slide-content-bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.5);
+	opacity: 0;
+	transition: 3s;
+}
+
+.slide-content-bg .slide-content-text {
+ 	position: absolute;
+ 	left: 50%;
+ 	top: 50%;
+ 	transform: translate(-50%, -50%);
+ 	text-align: center;
+}
+ 
+.slide-content-text > p {
+ 	color: #fff;
+ 	letter-spacing: 5px;
+ 	font-weight: bold;
+ 	margin: 20px 0;
+}
+ 
+.slide-content-text > p:nth-of-type(1) {
+ 	font-size: 1.8rem;
+ 	transition: 2s;
+ 	transform: translateY(-100px);
+ 	opacity: 0;
+}
+ 
+.slide-content-text > p:nth-of-type(2) {
+ 	font-size: 6rem;
+ 	transition: 2s;
+ 	transform: translateY(100px);
+ 	opacity: 0;
+}
+
+.slide-content-text > a {
+ 	font-size: 1.7rem;
+ 	display: inline-block;
+ 	color: #fff;
+ 	width: 200px;
+ 	letter-spacing: 5px;
+ 	padding: 10px;
+ 	border: 1px solid #fff;
+ 	opacity: 0;
+ 	transition: 0.4s;
+ 	margin-top: 30px;
+}
+ 
+.slide-content-text > a:hover {
+ 	background: rgba(0, 0, 0, 0.6);
+}
+/** 슬라이드 클래스 활성화 시에 이펙트 적용 **/
+.main-slide .slide-applay .slide-content-bg {
+	opacity: 1;
+}
+
+.main-slide .slide-applay .slide-content-text > p {
+	transform: translateY(0);
+	opacity: 1;
+}
+
+.main-slide .slide-applay .slide-content-text > a {
+	opacity: 1;
+}
+/** /슬라이드 클래스 활성화 시에 이펙트 적용 **/
+
+.main-slide-btn-wrap {
+	white-space: nowrap;
+	position: absolute;
+	bottom: 3%;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 1000;
+}
+
+.slide-btn {
+	cursor: pointer;
+	display: inline-block;
+	width: 30px;
+	height: 6px;
+	border-radius: 20px;
+	background: rgba(255, 255, 255, 0.6);
+	margin: 0 10px;
+	transition: 0.6s;
+}
+
+.slide-btn-on { /** addClass **/
+	width: 100px;
+	background: rgba(0, 0, 0, 0.8) !important;
+}
+
+/** 메인 섹션2 **/
+.main-section2-wrap {
+	width: 100%;
+	margin-top: 80px;
+}
+
+.main-section2 {
+	width: 85%;
+	margin: 0 auto;
+	display: grid;
+	grid-template-areas: ". . . .";
+	justify-content: center;
+	grid-gap: 60px;
+	text-align: center;
+}
+
+.section2-content > img {
+	width: 50%;
+	max-width: 90px;
+	height: auto;
+}
+
+.section2-content > h2 {
+	font-size: 2rem;
+	margin: 20px 0;
+}
+
+.section2-content > h2 > span {
+	font-family: 'Covered By Your Grace', cursive;
+	font-size: 2.3rem;
+}
+
+.section2-content > p {
+	font-size: 1.3rem;
+	color: #999;
+	line-height: 25px;
+}
+
+/** 메인 섹션3 **/
+.main-section3-wrap {
+	width: 100%;
+	margin-top: 80px;
+}
+
+.main-section3 {
+	width: 100%;
+}
+
+.section3-content {
+	display: flex;
+	flex-flow: row wrap;
+	width: 100%;
+}
+
+.section3-content > img {
+	width: 100%;
+	max-width: 50%;
+}
+
+.section3-content-text {
+	flex-basis: 50%;
+	background: #efefef;
+	padding: 100px;
+}
+
+.section3-content-text > h3 {
+	font-size: 4rem;
+}
+
+.section3-content-text > p {
+	margin: 20px 0 30px 0;
+}
+
+.section3-content-text > p:nth-of-type(1) {
+	font-size: 3rem;
+}
+
+.section3-content-text > p:nth-of-type(2) {
+	font-size: 1.6rem;
+	line-height: 37px;
+}
+
+/** 메인 섹션4 **/
+.main-section4-wrap {
+	width: 100%;
+	margin-top: 80px;
+}
+
+.main-section4 {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.main-section4-title-wrap {
+	text-align: center;
+	margin: 50px;
+}
+
+.main-section4-title-wrap > h3 {
+	font-size: 4rem;
+}
+
+.main-section4-title-wrap > h3 > span {
+	font-family: 'Covered By Your Grace', cursive;
+}
+
+.main-section4-title-wrap > p {
+	font-size: 1.5rem;
+	margin: 20px 0;
+	color: #999;
+}
+
+.section4-content-wrap {
+	display: grid;
+	grid-template-areas: ". . . .";
+	justify-content: center;
+	grid-gap: 40px;
+	font-size: 0;
+}
+
+.section4-content {
+	width: 100%;
+	max-width: 350px;
+ 	position: relative;
+	overflow: hidden;
+	opacity: 0;
+	transform: translateY(76px);
+	transition: 0.6s;
+}
+
+.section4-content > img {
+	width: 100%;
+	max-width: 100%;
+	cursor: pointer;
+	min-height: 200px;
+}
+
+.section4-img-text-box {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background:	rgba(61, 125, 195, 0.7);
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	opacity: 0;
+	transition: 0.4s;
+}
+
+.section4-img-text-box > p {
+	text-align: center;
+	color: #fff;
+	align-self: center;
+	font-size: 2rem;
+	margin: 10px 0;
+	opacity: 0;
+	transform: translateY(50px);
+	transition: 0.6s;
+}
+
+.section4-img-text-box > p:nth-of-type(2) {
+	font-weight: bold;
+	font-size: 1.6rem;
+}
+
+.section4-img-text-box > a {
+	font-size: 1.7rem;
+	display: block;
+	text-align: center;
+	padding-top: 20px;
+	color: #fff;
+	position: relative;
+}
+
+.section4-img-text-box > a > span {
+	display: inline-block;
+	color: #fff;
+	font-size: 2rem;
+	animation: arrowmove 1s infinite;
+	position: absolute;
+	top: 18px;
+}
+
+
+@keyframes arrowmove {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(40px); }
+}
+
+.section4-text-box-fade {
+	opacity: 1;
+}
+
+.section4-text-box-fade p {
+	transform: translateY(0) !important;
+	opacity: 1 !important;
+}
+
+/** 메인 섹션 5 **/
+.main-section5-wrap {
+	width: 100%;
+	margin: 50px 0;
+}
+
+.main-section5-title-wrap {
+	text-align: center;
+	background: radial-gradient(circle, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
+				url("/img/bookingbg.jpg") no-repeat fixed;
+	background-position: center;
+	padding: 50px;
+}
+
+.main-section5-title-wrap > h3 {
+	font-size: 4rem;
+	color: #fff;
+	margin: 20px 0;
+}
+
+.main-section5-title-wrap > p {
+	font-size: 1.8rem;
+	color: #fff;
+}
+
+.section5-booking-search-wrap {
+	width: 100%;
+	background: #fbce00;
+	padding: 30px 0;
+}
+
+.section5-search-content-wrap {
+	width: 70%;
+	margin: 0 auto;
+}
+
+.section5-search-content-wrap p {
+	color: #fff;
+	font-size: 2rem;
+	letter-spacing: 4px;
+	margin-bottom: 10px;	
+} 
+
+.section5-search-input-wrap {
+	width: 100%;
+}
+
+.section5-search-input-wrap > input {
+	width: 100%;
+	padding: 15px;
+	border: 0;
+	border-radius: 10px;
+}
+
+.section5-booking-img-wrap {
+	text-align: right;
+	margin: 10px 0;
+}
+
+.section5-booking-img-wrap > img {
+	width: 100%;
+	max-width: 150px;
+}
+
+.section5-select-wrap {
+	margin: 15px 0;
+	display: flex;
+}
+
+.section5-select-wrap select {
+	border: 0;
+	padding: 6px;
+	margin-right: 5px;
+	cursor: pointer;
+	background: #fff;
+}
+
+.section5-select-wrap select > option {
+	font-size: 1.6rem;
+}
+
+.arriving-wrap {
+	margin-right: 16px;
+}
+
+.section5-select-btn-wrap {
+	padding: 30px 0 0 20px;
+}
+
+.section5-select-btn-wrap > button {
+	cursor: pointer;
+	padding: 3px 30px;
+	line-height: 30px;
+	font-size: 1.7rem;
+	letter-spacing: 2px;
+	color: #fff;
+	border: 0;
+	border-radius: 5px;
+	box-shadow: 2px 3px 2px #999;
+	background: rgb(61, 125, 195);
+}
+
+/** 메인 섹션 6 **/
+
+.main-section6-wrap {
+	width: 100%;
+	background: #eaeaea;
+	padding: 50px 0;
+}
+
+.main-section6 {
+	width: 70%;
+	margin: 0 auto;
+}
+
+.main-section6-title-wrap {
+	width: 100%;
+	position: relative;
+}
+
+.main-section6-title-wrap > h3 {
+	width: 100%;
+}
+
+.main-section6-title-wrap > h3 {
+	font-size: 4rem;
+}
+
+.main-section6-title-wrap > h3 > span {
+	font-family: 'Covered By Your Grace', cursive;
+}
+
+.section6-news-link-wrap {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.section6-news-link-wrap > a {
+	font-size: 1.7rem;
+	display: block;
+	padding: 10px 30px;
+	background: #fbce00;
+	border-radius: 10px;
+}
+
+.section6-content-wrap {
+	display: grid;
+	grid-template-areas: ". . .";
+	grid-gap: 50px;
+	justify-content: center;
+	margin-top: 50px;
+}
+
+.section6-content {
+	width: 100%;
+	max-width: 370px;
+	font-size: 0;
+	opacity: 0;
+	transform: translateY(76px);
+	transition: 0.6s;
+}
+
+.section6-content > a {
+	display: block;
+}
+
+.section6-content-img-wrap {
+	position: relative;
+}
+
+.section6-content-img-wrap > img {
+	width: 100%;
+	max-width: 100%;
+	min-width: 273px;
+	min-height: 200px;
+}
+
+.cruse-ico-wrap {
+	display: grid;
+	justify-content: center;
+	position: absolute;
+	top: 5%;
+	left: 5%;
+	right: 5%;
+	bottom: 5%;
+	background: rgba(61, 125, 195, 0.7);
+	transition: 0.4s;
+	opacity: 0;
+}
+
+.cruse-ico-wrap:hover {
+	opacity: 1;
+}
+
+.cruse-ico-wrap > img {
+	width: 100%;
+	max-width: 100px;
+	align-self: center;
+}
+
+.section6-content-text-wrap {
+	background: #fff;
+	padding: 30px;
+	transition: 0.4s;
+	border-bottom-right-radius: 4px;
+	border-bottom-left-radius: 4px;
+}
+
+.section6-content-text-wrap:hover {
+	box-shadow: 0 8px 30px #999;
+}
+
+.section6-content-text-wrap > p {
+	font-size: 1.2rem;
+	letter-spacing: 3px;
+	font-weight: 300;
+	color: #ccc;
+}
+
+.section6-content-text-wrap > a {
+	display: block;
+	font-size: 1.9rem;
+	padding-top: 8px;
+	font-weight: bold;
+}
+
+.section6-content-text-wrap > a:hover {
+	color: rgb(61, 125, 195);
+}
+
+/**** scrEffect addClass ****/
+.content-appear {
+	transform: translateY(0);
+	opacity: 1;
+}
+
+/********************
+ * 반응형 미디어쿼리
+ ********************/
+
+/** max-height 구간 css **/
+@media screen and (max-height: 1024px) {	
+	.slide-content > img:nth-of-type(1) {
+		max-height: 1024px;
+	}
+}
+
+@media screen and (max-height: 900px) {
+	.main-slide-wrap {
+		height: 900px;
+	}
+}
+
+@media screen and (max-height: 800px) {
+	.main-slide-wrap {
+		height: 810px;
+	}
+}
+
+@media screen and (max-height: 768px) {
+	.main-slide-wrap {
+		height: 750px;
+	}
+}
+
+
+@media screen and (max-height: 600px) {
+	.main-slide-wrap {
+		height: 605px;
+	}
+}
+
+/** max-width 구간 css **/
+@media screen and (max-width: 1280px) {
+	html {
+		font-size: 9px;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	html {
+		font-size: 8px;
+	}
+		
+	.section4-content-wrap {
+		grid-template-areas: ". . .";
+	}
+
+	.main-section6 {
+		width: 90%;
+	}
+}

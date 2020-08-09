@@ -1,0 +1,310 @@
+/***********************
+ * 헤더 영역 일부 재정의 css
+ ************************/
+.header {
+	border-bottom: 0;
+}
+
+/***********************
+ * booking 메인영역 css
+ ************************/
+.booking-intro-wrap {
+	width: 100%;
+	background: url("/img/booking/mapbg.png") no-repeat;
+	background-size: cover;
+	padding: 230px 0;
+	position: relative;
+}
+
+.booking-title-wrap {
+	text-align: center;
+}
+
+.booking-title-wrap > h2 {
+	color: #fff;
+	font-size: 5.3rem;
+}
+
+.intro-icon-wrap {
+	position: absolute;
+	top: -50px;
+	left: 50%;
+	transform: translateX(-50%) translateY(-110%);
+}
+
+.intro-icon-wrap > .tooltip {
+	background: rgba(255, 255, 255, 0.9);
+	font-size: 1.5rem;
+	font-weight: bold;
+	text-align: center;
+	padding: 7px;
+	border-radius: 10px;
+	position: relative;
+	opacity: 0;
+}
+
+.intro-icon-wrap > .tooltip::after {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	border: 7px solid;
+	border-color: #fff transparent transparent;
+	bottom: -40%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.intro-icon-wrap > img {
+	max-width: 98px;
+}
+
+/** booking 컨텐츠 css **/ 
+.booking-section1-wrap {
+	width: 100%;
+	margin: 90px auto;
+}
+
+.booking-section1-title-wrap {
+	width: 85%;
+	margin: 0 auto;
+}
+
+.booking-section1-title-wrap > h3{
+	font-size: 3.4rem;
+	color: #099fe5;
+	margin: 10px 0;
+}
+
+.booking-section1-title-wrap > p {
+	color: #999;
+	font-size: 1.3rem;
+}
+
+.booking-section1-item-wrap {
+	display: grid;
+	grid-template-areas: ". . . .";
+	grid-gap: 2%;
+	justify-content: center;
+	padding: 60px 0;
+}
+
+.section1-item {
+	font-size: 0;
+	width: 100%;
+	max-width: 320px;
+	cursor: pointer;
+}
+
+.section1-item img {
+	width: 100%;
+}
+
+.section1-slide-wrap {
+	position: relative;
+	height: 211px;
+}
+
+.section1-slide-content {
+	position: absolute;
+	transition: 0.5s;
+}
+
+.section1-slide-content > img {
+	width: 100%;
+	max-height: 211px;
+}
+
+.section1-item-text-wrap {
+	border: 1px solid #ccc;
+	border-top: 0;	
+	padding: 35px;
+	line-height: 25px;
+	background: #fff;
+	min-height: 237px;
+	max-height: 237px;
+}
+
+.section1-item-text-wrap > p:nth-of-type(1) {
+	font-size: 1.8rem;
+	font-weight: bold;
+	margin: 20px 0;
+}
+
+.section1-item-text-wrap > p:nth-of-type(2) {
+	font-size: 1.4rem;
+}
+
+.layer::before { /** body에 입혀질 addClass **/ 
+	content : "";
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.99);
+	opacity: 0.6;
+	z-index: 9;
+}
+
+/** section2 **/
+.booking-section2-wrap {
+	width: 100%;
+	background: url("/img/booking/bookingbg.png");
+}
+
+.booking-section2 {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.booking-section2-title-wrap {
+	padding: 30px 0;
+}
+
+.booking-section2-title-wrap > h3 {
+	font-size: 3.4rem;
+	color: #099fe5;
+	margin: 10px 0;
+}
+
+.booking-section2-title-wrap > p {
+	font-size: 2rem;
+	color: #999;
+}
+
+.booking-section2-content {
+	display: grid;
+	grid-template-areas: ". .";
+	grid-template-columns: 60% 60%;
+	grid-gap: 100px;
+	font-size: 0;
+}
+
+.booking-section2-search-wrap {
+	display: flex;
+	flex-direction: column;
+}
+
+.booking-section2-search-wrap > div {
+	margin: 20px 0;
+}
+
+.booking-section2-search-wrap label {
+	font-size: 1.8rem;
+	padding: 3px;
+	background: #fff;
+	display: block;
+}
+
+.booking-section2-search-wrap input {
+	border: 0;
+	width: 100%;
+	padding: 10px;
+}
+
+.booking-section2-search-wrap textarea {
+	border: 0;
+	width: 100%;
+	min-height: 150px; 
+}
+
+.booking-section2-search-wrap input,textarea {
+	font-size: 1.8rem;
+}
+
+.name-email-search-wrap {
+	display: grid;
+	grid-template-areas: ". .";
+	grid-gap: 30px;
+}
+
+.booking-section2-info {
+	width: 30%;
+	text-align: center;
+}
+
+.info-list > li {
+	font-size: 1.5rem;
+	margin: 30px 0;
+	line-height: 31px;
+}
+
+.info-list > li > span {
+	font-weight: bold;
+}
+
+.info-list > li > a {
+	color: #0061ff;
+}
+
+.booking-search-agree-wrap > label {
+	font-size: 1.5rem;
+	padding-left: 7px;
+}
+
+.booking-search-agree-wrap > label > a {
+	color: #0061ff;
+}
+
+.booking-search-btn-wrap {
+	display: inline-block;
+	padding: 15px 0;
+	float: right;
+}
+
+.booking-search-btn-wrap > #send-btn {
+	cursor: pointer;
+	padding: 3px 30px;
+	line-height: 30px;
+	font-size: 1.7rem;
+	letter-spacing: 2px;
+	color: #fff;
+	border: 0;
+	background: rgb(61, 125, 195);
+	transition: 0.5s;
+}
+
+.booking-search-btn-wrap > .wating-bar {
+	width: 100%;
+	background: rgba(0, 0, 0, 0.3);
+	height: 7px;
+	position: relative;
+	display: none;
+}
+
+.booking-search-btn-wrap > .wating-bar > span {
+	height: 100%;
+	display: block;
+	background: #eaeaea;
+	position: absolute;
+	z-index: 1;
+}
+
+/********************
+ * 반응형 미디어쿼리
+ ********************/
+
+@media screen and (max-width: 1400px) {
+	.booking-section1-item-wrap {
+		grid-template-areas: ". .";
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	html {
+		font-size: 9px;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.booking-section2-content {
+		grid-template-columns: 80% 60%;
+		grid-gap: 50px;
+	}
+	
+	.info-list > li {
+		line-height: 25px;
+	}
+	
+}

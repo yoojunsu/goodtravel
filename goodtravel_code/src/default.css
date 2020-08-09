@@ -1,0 +1,162 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	outline: none;
+    color: #000;
+	font-family: 'Quicksand', sans-serif;
+}
+
+html  {
+    font-size: 10px;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+/***********************
+ * 헤더 영역 css
+ ************************/
+
+.header {
+	width: 100%;
+	padding: 35px 0;
+	position: absolute;
+	border-bottom: 1px solid #999;
+	z-index: 100000;
+}
+
+.header-block {
+	display: flex;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.header-logo-wrap {
+	flex-basis: 80%;
+}
+
+.header-logo-wrap > h1 > a {
+	font-family: 'Covered By Your Grace', cursive;
+	font-size: 3.8rem;
+	color: #fff;
+}
+
+.row-resolution-nav-wrap {
+	display: none;
+	
+}
+
+.header-nav-wrap {
+	height: 50px;
+	line-height: 50px;
+	flex-basis: 20%;
+}
+
+.header-nav {
+	display: flex;
+}
+
+.header-nav > li {
+	margin-right: 40px;
+	position: relative;
+}
+
+.header-nav li > a {
+	font-size: 1.5rem;
+	color: #fff;
+	font-weight: 500;
+	position: relative;
+	padding: 0 0 3px;
+}
+
+.header-nav li > a::after {
+	content: ' ';
+	position: absolute;
+	display: block;
+	height: 1px;
+	width: 0;
+	background: #fff;
+	bottom: 0;
+	transition: 0.3s;
+}
+
+.header-nav li:hover > a::after {
+	width: 100%;
+}
+/***********************
+ * 풋터 영역 css
+ ************************/
+
+.footer {
+	width: 78%;
+	margin: 40px auto;
+	position: relative;
+}
+
+.footer-list-wrap {
+	display: grid;
+	justify-content: center;
+	grid-template-areas: ". . . . .";
+	grid-gap: 150px;
+}
+
+.footer-list > p {
+	margin: 20px 0;
+	font-size: 1.6rem;
+}
+
+.footer-list > ul > li {
+	margin: 8px 0;
+}
+
+.footer-list > ul > li > a {
+	font-size: 1.3rem;
+	color: #999;
+}
+
+.footer-copy-wrap {
+	width: 100%;
+	margin: 50px 0;	
+}
+
+.footer-copy-wrap > span {
+	white-space: nowrap;
+	font-size: 1.3rem;
+}
+
+.footer-icon-wrap {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+.footer-icon-wrap > i {
+	font-size: 2.2rem;
+	margin-right: 20px;
+}
+
+.footer-icon-wrap > i:nth-of-type(1) {
+	color: #008df9;
+}
+
+.footer-icon-wrap > i:nth-of-type(2) {
+	color: #f78ce5;
+}
+
+.footer-icon-wrap > i:nth-of-type(3) {
+	color: #008df9;
+}
+
+.footer-icon-wrap > i:nth-of-type(4) {
+	color: #ff0000;
+}
+
+@media screen and (max-width: 1024px) {
+	.footer-list-wrap {
+		grid-gap: 100px;
+	}		
+}

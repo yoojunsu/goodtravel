@@ -1,0 +1,59 @@
+.row-resolution-nav-hamburger > .hamburger-line {
+	background: #000;
+}
+
+.destinations-list-container {
+	grid-template-areas: ". .";
+}
+
+.list-link {
+	padding: 15rem;
+}
+
+.destinations-list-box {
+	grid-area: auto;
+}
+
+.combo-item-list {
+	grid-template-areas: ". .";
+}
+
+/********************
+ * 반응형 미디어쿼리
+ ********************/
+
+@media screen and (max-width: 700px) {
+	.destinations-list-container {
+		grid-template-areas: "."	
+	}
+	
+	.combo-item-list {
+		grid-template-areas: ".";
+	}	
+
+	.combo-item-list > li {
+		max-width: 380px;
+	}
+}
+
+@media screen and (max-width:550px) {
+	html {
+		font-size: 8px;
+	}
+}
+
+@media screen and (max-width:420px) {
+	.section2-title-wrap {
+		text-align: center;
+	}	
+	
+	.combo-box-wrap {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width:400px) {
+	html {
+		font-size: 7px;
+	}
+}

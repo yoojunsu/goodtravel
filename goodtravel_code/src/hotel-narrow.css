@@ -1,0 +1,95 @@
+html {
+	font-size: 9px;
+}
+
+.row-resolution-nav-hamburger > .hamburger-line {
+	background: #000;
+}
+
+.hotel-section-wrap {
+	width: 90%;
+}
+
+.section2-slide-wrap {
+	width: 100%;
+}
+
+.section2-slide figure > img {
+	width: 230px;
+}
+	
+.section3-slide-wrap {
+	width: 100%;
+}
+
+@media screen and (max-width: 450px) {
+	html {
+		font-size: 8px;
+	}
+	.section1-select-wrap {
+		display: block;	
+	}
+	
+	.arriving-wrap {
+		margin-right: 0;
+		margin: 12px 0;
+	}
+	
+	.section1-search-content-wrap p {
+		margin-bottom: 5px;
+	}
+	
+	.section1-select-wrap select {
+		width: 100%;
+		margin-top: 5px;
+	}
+	
+	.section1-select-btn-wrap {
+		padding: 30px 0;
+	}
+	
+	.section1-select-btn-wrap > button {
+		width: 100%;
+	}
+	
+	.section2-slide figure > img {
+		width: 200px;
+	}
+	
+	.hotel-section-wrap {
+		width: 100%;
+		text-align: center;
+	}
+	
+	.section3-slide-wrap {
+		width: 85%;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	html {
+		font-size: 7px;
+	}
+
+	.section2-slide-wrap {
+		width: 100%;
+	}
+} 	
+	
+@media screen and (max-width: 350px) {
+	html {
+		font-size: 6px;
+	}
+	
+	.section2-slide-wrap {
+		width: 70%;
+	}
+	
+	.section3-slide-wrap {
+		width: 100%;
+	}
+
+	.section2-slide figure > img {
+		width: 240px;
+	}		
+} 	
