@@ -1,0 +1,32 @@
+* {
+	font-family: 'Jua', sans-serif;
+}
+
+.noie-alert-wrap {
+	text-align: center;
+	padding: 150px 150px 0;
+}
+
+.noie-alert-wrap > h1 {
+	font-size: 2.8rem;
+}
+
+.noie-alert-wrap > p {
+	line-height: 60px;
+	font-size: 2.4rem;
+}
+
+.noie-alert-wrap > p:nth-of-type(2) {
+	margin: 20px 0;
+}
+
+.web-list-wrap {
+	text-align: center;
+}
+
+.web-list-wrap > img {
+	width: 100%;
+	max-width: 500px;
+}
+
+
